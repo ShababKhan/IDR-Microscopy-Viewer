@@ -57,17 +57,17 @@ The application follows the Model-View-ViewModel (MVVM) architectural pattern:
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                        VIEW LAYER                            │
+│                        VIEW LAYER                           │
 │  PlateGridView | ImageDetailView | MetadataPanel | Controls │
 └─────────────────────────────────────────────────────────────┘
                               ↕ (Signals/Slots)
 ┌─────────────────────────────────────────────────────────────┐
-│                     VIEWMODEL LAYER                          │
-│  PlateViewModel | ImageViewModel | QCViewModel               │
+│                     VIEWMODEL LAYER                         │
+│  PlateViewModel | ImageViewModel | QCViewModel              │
 └─────────────────────────────────────────────────────────────┘
                               ↕ (Direct Access)
 ┌─────────────────────────────────────────────────────────────┐
-│                      MODEL LAYER                             │
+│                      MODEL LAYER                            │
 │  IDRClient | IDRScreen | IDRPlate | IDRImage | Cache        │
 └─────────────────────────────────────────────────────────────┘
 ```
